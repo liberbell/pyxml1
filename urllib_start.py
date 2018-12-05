@@ -11,3 +11,6 @@ def main():
 
 
     print('Return Data:------------------')
+
+if __name__ == '__main__':
+    main()
