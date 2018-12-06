@@ -1,4 +1,5 @@
 import urllib.request
+from http import HTTPStatus
 
 def main():
     # url='http://'non-such-server.org'
@@ -7,7 +8,7 @@ def main():
 
     result = urllib.request.urlopen(url)
     print('Result code: {}'.format(result.status))
-    if result.status == 200:
+    if result.getcode() == HTTPStatus.OK:
         print(result.read().decode('UTF-8'))
 
 if __name__ == '__main__':
