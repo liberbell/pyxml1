@@ -1,5 +1,6 @@
 import urllib.request
 from http import HTTPStatus
+from urllib.error import HTTPError
 
 def main():
     # url='http://'non-such-server.org'
