@@ -13,6 +13,11 @@ def main():
 
     result = urllib.request.urlopen(url + '?' + data)
 
+    url = 'http://httpbin.org/post'
+    data = data.encode()
+
+    result = urllib.request.urlopen(url + '?' + data)
+
     print('Result code: {0}'.format(result.status))
 
     print('Headers:----------------------')
