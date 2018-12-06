@@ -12,6 +12,7 @@ def main():
 
 
     print('Return Data:------------------')
+    print(result.getdata())
 
 if __name__ == '__main__':
     main()
