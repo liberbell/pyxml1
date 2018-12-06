@@ -12,7 +12,7 @@ def main():
 
 
     print('Return Data:------------------')
-    print(result.read())
+    print(result.read().decode('UTF-8'))
 
 if __name__ == '__main__':
     main()
