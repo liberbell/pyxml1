@@ -1,9 +1,17 @@
 import urllib.request
+import urllib.parse
 
 def main():
-    url = 'http://httpbin.org/xml'
+    url = 'http://httpbin.org/get'
 
-    result = urllib.request.urlopen(url)
+    args = {
+        'name': 'Joe Marini',
+        'is_author': True
+    }
+
+    data = urllib.parse.urlencode(args)
+
+    result = urllib.request.urlopen(url + '?' + data)
 
     print('Result code: {0}'.format(result.status))
 
