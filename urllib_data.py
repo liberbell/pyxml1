@@ -16,7 +16,7 @@ def main():
     url = 'http://httpbin.org/post'
     data = data.encode()
 
-    result = urllib.request.urlopen(url data=data)
+    result = urllib.request.urlopen(url, data=data)
 
     print('Result code: {0}'.format(result.status))
 
