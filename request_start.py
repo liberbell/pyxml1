@@ -5,12 +5,12 @@ def main():
     # result = requests.get(url)
     # printResults(result)
 
-    url2 = 'http://httpbin.org/get'
+    url2 = 'http://httpbin.org/post'
     datavalues = {
         'key1': 'value1',
         'key2': 'value2'
     }
-    result = requests.get(url2, params=datavalues)
+    result = requests.post(url2, data=datavalues)
     printResults(result)
 
 
