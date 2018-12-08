@@ -15,7 +15,7 @@ def printResults(resData):
     print('\n')
 
     print('Return data:-----------------')
-    print(resData.content)
+    print(resData.text)
 
 
 
