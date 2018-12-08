@@ -7,10 +7,10 @@ def main():
 
     url2 = 'http://httpbin.org/get'
     datavalues = {
-        'key1': 'value1'
+        'key1': 'value1',
         'key2': 'value2'
     }
-    result = requests.get(url2)
+    result = requests.get(url2, params=datavalues)
     printResults(result)
 
 
