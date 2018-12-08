@@ -1,9 +1,9 @@
 import requests
 
 def main():
-    url = 'http://httpbin.org/xml'
-    result = requests.get(url)
-    printResults(result)
+    # url = 'http://httpbin.org/xml'
+    # result = requests.get(url)
+    # printResults(result)
 
     url2 = 'http://httpbin.org/get'
     datavalues = {
