@@ -6,6 +6,12 @@ def main():
     printResults(result)
 
     url2 = 'http://httpbin.org/get'
+    datavalues = {
+        'key1': 'value1'
+        'key2': 'value2'
+    }
+    result = requests.get(url2)
+    printResults(result)
 
 
 def printResults(resData):
