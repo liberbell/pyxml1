@@ -1,6 +1,7 @@
 import requests
 
 def main():
+    url = 'http://httpbin.org/xml'
 
 
 def printResults(resData):
