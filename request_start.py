@@ -5,6 +5,8 @@ def main():
     result = requests.get(url)
     printResults(result)
 
+    url2 = 'http://httpbin.org/get'
+
 
 def printResults(resData):
     print('Result code: {0}'.format(resData.status_code))
