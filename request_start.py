@@ -2,6 +2,8 @@ import requests
 
 def main():
     url = 'http://httpbin.org/xml'
+    result = requests.get(url)
+    printResults(result)
 
 
 def printResults(resData):
