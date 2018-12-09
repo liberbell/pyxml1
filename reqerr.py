@@ -1,9 +1,13 @@
 import requests
+from requests import HTTPError
 
 def main():
-    url = 'http://httpbin.org/status/404'
-    result = requests.get(url)
-    printResults(result)
+    try:
+        url = 'http://httpbin.org/status/404'
+        result = requests.get(url)
+        printResults(result)
+    except HTTPError as err:
+        print('Error: {0}'.format(err))
 
 
 def printResults(resData):
