@@ -13,6 +13,13 @@ def main():
     result = requests.post(url2, data=datavalues)
     printResults(result)
 
+    url2 = 'http://httpbin.org/get'
+    headervalues = {
+        'User-Agent': 'Joe Marini App / 1.0.0',
+    }
+    result = requests.post(url2, data=datavalues)
+    printResults(result)
+
 
 def printResults(resData):
     print('Result code: {0}'.format(resData.status_code))
