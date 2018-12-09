@@ -1,4 +1,5 @@
 import json
+from json import JSONDecodeError
 
 def main():
     jsonStr = '''{
@@ -12,7 +13,11 @@ def main():
         "price": 8.99
     }'''
 
-    data = json.loads(jsonStr)
+    try:
+        data = json.loads(jsonStr)
+    except json as err:
+        print('Wooops, JSON decoded error')
+        print(err.msg)
 
     print('sandwitch: ' + data['sandwitch'])
     if (data['toasted']):
