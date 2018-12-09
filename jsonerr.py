@@ -9,13 +9,13 @@ def main():
             "Thousand Island Dressing",
             "SauerKraut",
             "Pickles"
-        ]
+        ],
         "price": 8.99
     }'''
 
     try:
         data = json.loads(jsonStr)
-    except json as err:
+    except JSONDecodeError as err:
         print('Wooops, JSON decoded error')
         print(err.msg)
         print(err.lineno, err.colno)
