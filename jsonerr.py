@@ -18,6 +18,7 @@ def main():
     except json as err:
         print('Wooops, JSON decoded error')
         print(err.msg)
+        print(err.lineno, err.colno)
 
     print('sandwitch: ' + data['sandwitch'])
     if (data['toasted']):
