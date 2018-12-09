@@ -12,3 +12,6 @@ def printResults(resData):
 
     print('Returned Data:--------------------')
     print(resData.text)
+
+if __name__ == '__main__':
+    main()
