@@ -2,7 +2,7 @@ import json
 
 def main():
     jsonStr = '''{
-        'sandwitch': 'Reuben,
+        'sandwitch': 'Reuben',
         'toasted': true,
         'toppings': [
             'Thousand Island Dressing',
