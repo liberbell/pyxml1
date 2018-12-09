@@ -5,7 +5,8 @@ def main():
     url ='http://httpbin.org/basic-auth/JoeMarini/MySecretWord'
     myCreds = HTTPBasicAuth('JoeMarini', 'MySecretWord')
 
-    result = requests.get(url, auth=myCreds)
+    # result = requests.get(url, auth=myCreds)
+    result = requests.get(url, auth=('JoeMarini', 'MySecretWord'))
 
     printResults(result)
 
