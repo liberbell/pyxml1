@@ -5,6 +5,7 @@ def main():
     try:
         url = 'http://httpbin.org/status/404'
         result = requests.get(url)
+        result.raise_for_status()
         printResults(result)
     except HTTPError as err:
         print('Error: {0}'.format(err))
