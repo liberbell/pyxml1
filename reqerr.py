@@ -9,6 +9,8 @@ def main():
         printResults(result)
     except HTTPError as err:
         print('Error: {0}'.format(err))
+    except Timeout as err:
+        print('request Timeout: {0}'.format(err))
 
 
 def printResults(resData):
