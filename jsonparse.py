@@ -6,10 +6,10 @@ def main():
         "toasted": true,
         "toppings": [
             "Thousand Island Dressing",
-            'SauerKraut',
-            'Pickles'
+            "SauerKraut",
+            "Pickles"
         ],
-        'price': 8.99
+        "price": 8.99
     }'''
 
     data = json.loads(jsonStr)
