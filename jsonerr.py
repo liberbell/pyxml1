@@ -8,7 +8,7 @@ def main():
             "Thousand Island Dressing",
             "SauerKraut",
             "Pickles"
-        ],
+        ]
         "price": 8.99
     }'''
 
