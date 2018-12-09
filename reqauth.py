@@ -7,7 +7,6 @@ def main():
 
     # result = requests.get(url, auth=myCreds)
     result = requests.get(url, auth=('JoeMarini', 'MySecretWord'))
-
     printResults(result)
 
 def printResults(resData):
