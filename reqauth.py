@@ -1,7 +1,9 @@
 import requests
+from requests.auth import HTTPBasicAuth
 
 def main():
     url ='http://httpbin.org/basic-auth/JoeMarini/MySecretWord'
+    myCreds = HTTPBasicAuth('JoeMarini', 'MySecretWord')
 
     printResults(result)
 
