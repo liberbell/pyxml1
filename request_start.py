@@ -11,7 +11,7 @@ def main():
         'key2': 'value2'
     }
     result = requests.post(url2, data=datavalues)
-    printResults(result)
+    # printResults(result)
 
     url3 = 'http://httpbin.org/get'
     headervalues = {
