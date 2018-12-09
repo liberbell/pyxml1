@@ -19,7 +19,7 @@ def main():
         print('And it`s toasted!')
 
     for topping in data['toppings']:
-        print('Topping: ' + toppings)
+        print('Topping: ' + topping)
 
 if __name__ == '__main__':
     main()
