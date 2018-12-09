@@ -13,11 +13,11 @@ def main():
     result = requests.post(url2, data=datavalues)
     printResults(result)
 
-    url2 = 'http://httpbin.org/get'
+    url3 = 'http://httpbin.org/get'
     headervalues = {
         'User-Agent': 'Joe Marini App / 1.0.0',
     }
-    result = requests.post(url2, data=datavalues)
+    result = requests.get(url3, headers=headervalues)
     printResults(result)
 
 
