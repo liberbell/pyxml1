@@ -15,3 +15,6 @@ def main():
 
     print('JSON Data:--------------------')
     print(jsonStr)
+
+if __name__ == '__main__':
+    main()
