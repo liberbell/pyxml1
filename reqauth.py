@@ -5,6 +5,8 @@ def main():
     url ='http://httpbin.org/basic-auth/JoeMarini/MySecretWord'
     myCreds = HTTPBasicAuth('JoeMarini', 'MySecretWord')
 
+    result = requests.get(url, auth=myCreds)
+
     printResults(result)
 
 def printResults(resData):
@@ -14,4 +16,5 @@ def printResults(resData):
     print('Returned data: ----------------')
     print(resData.tesxt)
 
-    print('')
+if __name__ == '__main__':
+    main()
