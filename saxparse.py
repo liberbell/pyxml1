@@ -14,6 +14,8 @@ class MyContentHandler(xml.sax.ContentHandler):
             self.slideCount += 1
         elif tagName == 'item':
             self.itemCount += 1
+        elif tagName == 'titel':
+            self.isInTitle = True
 
     def startDocument(self):
         print('About to start!')
