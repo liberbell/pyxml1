@@ -14,5 +14,8 @@ def main():
     items = domtree.getElementsByTagName('item')
     print('There are {0} item tags'.format(items.length))
 
+    newItem = domtree.createElement('item')
+    newItem.appendChild(domtree.createTextNode('This is some items'))
+
 if __name__ == '__main__':
     main()
