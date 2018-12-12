@@ -14,7 +14,7 @@ class MyContentHandler(xml.sax.ContentHandler):
             self.slideCount += 1
         elif tagName == 'item':
             self.itemCount += 1
-        elif tagName == 'titel':
+        elif tagName == 'title':
             self.isInTitle = True
 
     def endElement(self, tagName):
