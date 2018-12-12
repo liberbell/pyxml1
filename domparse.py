@@ -17,5 +17,10 @@ def main():
     newItem = domtree.createElement('item')
     newItem.appendChild(domtree.createTextNode('This is some items'))
 
+    firstSlide = domtree.getElementsByTagName('slide')[0]
+    firstSlide.appendChild(newItem)
+
+    
+
 if __name__ == '__main__':
     main()
