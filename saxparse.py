@@ -5,6 +5,7 @@ class MyContentHandler(xml.sax.ContentHandler):
     def __init__(self):
         self.slideCount = 0
         self.itemCount = 0
+        self.isInTitle = 0
 
     def startElement(self, tagName, attrs):
         if tagName == 'slideshow':
