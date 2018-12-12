@@ -17,6 +17,14 @@ class MyContentHandler(xml.sax.ContentHandler):
         elif tagName == 'titel':
             self.isInTitle = True
 
+    def endElement(self, tagName):
+        if tagName == 'title':
+            self.isInTitle = False
+
+    def characters(self, chars):
+        if self.isInTitle:
+            print('Title: ' + chars)
+
     def startDocument(self):
         print('About to start!')
 
