@@ -20,7 +20,8 @@ def main():
     firstSlide = domtree.getElementsByTagName('slide')[0]
     firstSlide.appendChild(newItem)
 
-    
+    items = domtree.getElementsByTagName('item')
+    print('There are {0} item tags'.format(items.length))    
 
 if __name__ == '__main__':
     main()
