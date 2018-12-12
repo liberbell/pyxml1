@@ -21,7 +21,10 @@ def main():
 
     url = 'http://httpbin.org/xml'
     result = requests.get(url)
-    print(result.text)
+    # print(result.text)
+
+    xml.sax.parseString(result.text, handler)
+
 
     print('There are {0} slide elements.'.format(handler.slideCount))
     print('There are {0} item elements.'.format(handler.itemCount))
