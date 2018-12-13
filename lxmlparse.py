@@ -17,7 +17,7 @@ def main():
     newSlide = etree.SubElement(doc, "slide")
     newSlide.text = "This is a new slide"
 
-    slidecount = len(doc.findall("slide"))
+    slideCount = len(doc.findall("slide"))
 
 if __name__ == '__main__':
     main()
