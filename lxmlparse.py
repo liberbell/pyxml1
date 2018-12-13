@@ -18,7 +18,7 @@ def main():
     newSlide.text = "This is a new slide"
 
     slideCount = len(doc.findall("slide"))
-    itemCount = len(doc.findall("item"))
+    itemCount = len(doc.findall(".//item"))
 
 if __name__ == '__main__':
     main()
