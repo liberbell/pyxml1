@@ -7,7 +7,6 @@ def main():
 
     doc = etree.fromstring(result.content)
     # print(result.text)
-
     print(doc.tag)
     print(doc.attrib['title'])
 
@@ -15,7 +14,6 @@ def main():
         print(elem.tag)
 
     slideCount1 = len(doc.findall("slide"))
-
 
     newSlide = etree.SubElement(doc, "slide")
     newSlide.text = "This is a new slide"
